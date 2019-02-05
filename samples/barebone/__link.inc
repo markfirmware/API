@@ -47,3 +47,9 @@
 { barebone.o}
 { stdlib_macros.o}
 { stdlib_system.o}
+{ barebone.o}
+{ stdlib_macros.o}
+{ stdlib_system.o}
+{ barebone.o}
+{ stdlib_macros.o}
+{ stdlib_system.o}

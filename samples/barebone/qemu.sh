@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-nim c -c -f --compileOnly --nimcache:nimcache --cpu:arm --gc:none --os:standalone barebone
-mv nimcache/*.c .
+nim c -f --genScript --nimcache:nimcache --cpu:arm --gc:none --os:standalone barebone
+mv nimcache/*.c nimcache/*.h .
 sed -i '/^int main/,/^}/d' barebone.c
 
 FPC_PATH=/root/ultibo/core/fpc/bin/ BOARD_TYPE=qemuvpb make
